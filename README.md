@@ -1,5 +1,4 @@
 
-```markdown
 # Restaurant One Solution Project
 
 ## Table of Contents
