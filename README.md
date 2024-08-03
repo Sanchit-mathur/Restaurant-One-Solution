@@ -1,5 +1,3 @@
-# Restaurant-One-Solution-ROS-
-
 # Restaurant One Solution Project
 
 ## Overview
