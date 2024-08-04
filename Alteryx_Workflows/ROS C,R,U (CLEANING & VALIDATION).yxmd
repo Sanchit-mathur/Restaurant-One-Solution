@@ -1,0 +1,949 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="77" y="353" width="1352" height="312" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>User Data Cleaning &amp; Validation</Caption>
+          <Style TextColor="#ff8000" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>User Data Cleaning &amp; Validation</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="101" y="473" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>ROS Data.xlsx
+Query=`User$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="User ID" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="V_String" />
+                <Field name="Role (FK)" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+                <Field name="Restaurant ID" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="V_String" />
+                <Field name="Client (FK)" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="V_String" />
+                <Field name="Subscription (FK)" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+                <Field name="first_name" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="V_String" />
+                <Field name="last_name" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="V_String" />
+                <Field name="email" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="V_String" />
+                <Field name="password" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="V_String" />
+                <Field name="phone" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="V_String" />
+                <Field name="is active" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Bool" />
+                <Field name="Activated date" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Date" />
+                <Field name="inactivated_date" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Date" />
+                <Field name="F14" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+                <Field name="F15" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+                <Field name="F16" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+                <Field name="F17" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+                <Field name="F18" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+                <Field name="F19" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+                <Field name="F20" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+                <Field name="F21" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+                <Field name="F22" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+                <Field name="F23" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+                <Field name="F24" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="V_String" />
+                <Field name="F25" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="V_String" />
+                <Field name="F26" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`User$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="197" y="401" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\hp\AppData\Local\Temp\Alteryx\Engine_11704_32dc057d395542d88bb83f99126f1a58_\Engine_11704_898a0a23906977428a0aa16ee61fceec~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="294" y="473" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="User ID" selected="True" />
+                <SelectField field="Role (FK)" selected="True" />
+                <SelectField field="Restaurant ID" selected="True" />
+                <SelectField field="Client (FK)" selected="True" />
+                <SelectField field="Subscription (FK)" selected="True" />
+                <SelectField field="first_name" selected="True" />
+                <SelectField field="last_name" selected="True" />
+                <SelectField field="email" selected="True" />
+                <SelectField field="password" selected="True" />
+                <SelectField field="phone" selected="True" />
+                <SelectField field="is active" selected="True" />
+                <SelectField field="Activated date" selected="True" />
+                <SelectField field="inactivated_date" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings>
+            <Position x="426" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"first_name","last_name"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="582" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="True" />
+              <InputFieldName>Activated date</InputFieldName>
+              <Language>English</Language>
+              <Format>dd/MM/yyyy</Format>
+              <OutputFieldName>ACTIVATED DATE</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Activated date To:
+dd/MM/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="714" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="True" />
+              <InputFieldName>inactivated_date</InputFieldName>
+              <Language>English</Language>
+              <Format>dd/MM/yyyy</Format>
+              <OutputFieldName>INACTIVATED DATE</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert inactivated_date To:
+dd/MM/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1194" y="462" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Activated date" selected="False" />
+                <SelectField field="inactivated_date" selected="False" />
+                <SelectField field="Validation_Error" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="798" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF ([Is Active] = 1 AND NOT ISNULL([INACTIVATED DATE])) OR ([INACTIVATED DATE] &lt; [ACTIVATED DATE2]) THEN&#xA;    &quot;Error&quot;&#xA;ELSE&#xA;    &quot;No Error&quot;&#xA;ENDIF&#xA;" field="Validation_Error" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Validation_Error = IF ([Is Active] = 1 AND NOT ISNULL([INACTIVATED DATE])) OR ([...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="930" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF ISNULL([Subscription (FK)]) THEN &quot;Error&quot;&#xA;ELSE &quot;No Error&quot;&#xA;ENDIF" field="Validation_Error" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Validation_Error = IF ISNULL([Subscription (FK)]) THEN "Error"
+ELSE "No Error"
+E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1038" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Validation_Error] = "No Error" AND [is active]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Validation_Error] = "No Error" AND [is active]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1302" y="462" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File />
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Table>user_cleaned</Table>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <OutputOption>Overwrite</OutputOption>
+                <Connection DcmType="ConnectionId">5b5bd9ad-2c87-41fe-8a0f-58d83d916a61</Connection>
+                <Projection />
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:ROS
+Table=user_cleaned</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="77" y="737" width="1104" height="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Restaurant Data Cleaning &amp; Validation</Caption>
+          <Style TextColor="#ff8000" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Restaurant Data Cleaning &amp; Validation</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="102" y="846" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>ROS Data.xlsx
+Query=`Restaurant$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Restaurant ID" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="V_String" />
+                <Field name="Client_id (FK)" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="V_String" />
+                <Field name="Currency_id (FK)" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="Double" />
+                <Field name="Country" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="V_String" />
+                <Field name="Name" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="V_String" />
+                <Field name="Location" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="V_WString" />
+                <Field name="Size" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="V_String" />
+                <Field name="Cusine" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="V_String" />
+                <Field name="Cost for 1" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="Double" />
+                <Field name="Timing" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="V_String" />
+                <Field name="Is_Franchise" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="Double" />
+                <Field name="is Active" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="Bool" />
+                <Field name="Activated date" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="Date" />
+                <Field name="inactivated_date" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Restaurant$`" type="Date" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="221" y="786" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\hp\AppData\Local\Temp\Alteryx\Engine_11704_32dc057d395542d88bb83f99126f1a58_\Engine_11704_f087d92271dbe34eba71f53d969d2613~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="318" y="846" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="True" />
+              <InputFieldName>Activated date</InputFieldName>
+              <Language>English</Language>
+              <Format>dd/MM/yyyy</Format>
+              <OutputFieldName>ACTIVATED DATE</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Activated date To:
+dd/MM/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="486" y="846" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="True" />
+              <InputFieldName>inactivated_date</InputFieldName>
+              <Language>English</Language>
+              <Format>dd/MM/yyyy</Format>
+              <OutputFieldName>INACTIVATED DATE</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert inactivated_date To:
+dd/MM/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="954" y="834" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Activated date" selected="False" />
+                <SelectField field="inactivated_date" selected="False" />
+                <SelectField field="Validation_Error" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="594" y="846" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF ([Is Active] = 1 AND NOT ISNULL([INACTIVATED DATE])) OR ([INACTIVATED DATE] &lt; [ACTIVATED DATE2]) THEN&#xA;    &quot;Error&quot;&#xA;ELSE&#xA;    &quot;No Error&quot;&#xA;ENDIF&#xA;" field="Validation_Error" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Validation_Error = IF ([Is Active] = 1 AND NOT ISNULL([INACTIVATED DATE])) OR ([...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="702" y="846" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Validation_Error] = "No Error" AND [is Active]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Validation_Error] = "No Error" AND [is Active]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings>
+            <Position x="810" y="834" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Restaurant ID","Client_id (FK)","Currency_id (FK)","Country","Name","Location","Size","Cusine","Cost for 1","Timing","Is_Franchise","is Active","Activated date","inactivated_date","ACTIVATED DATE2","INACTIVATED DATE","Validation_Error"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1050" y="834" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File />
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Table>restaurant_cleaned</Table>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <OutputOption>Overwrite</OutputOption>
+                <Connection DcmType="ConnectionId">5b5bd9ad-2c87-41fe-8a0f-58d83d916a61</Connection>
+                <Projection />
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:ROS
+Table=restaurant_cleaned</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="89" y="54" width="1016" height="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Client Data Cleaning &amp; Validation</Caption>
+          <Style TextColor="#ff8000" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Client Data Cleaning &amp; Validation</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="114" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Client$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>ROS Data.xlsx
+Query=`Client$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Client ID" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Client$`" type="V_String" />
+                <Field name="Category" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Client$`" type="Double" />
+                <Field name="Country" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Client$`" type="V_String" />
+                <Field name="Name" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Client$`" type="V_String" />
+                <Field name="Is Active" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Client$`" type="Bool" />
+                <Field name="Activated Date" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Client$`" type="Date" />
+                <Field name="Deactivated Date" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Client$`" type="Date" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings>
+            <Position x="236" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">True</Value>
+              <Value name="List Box (11)">"Name"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="342" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="True" />
+              <InputFieldName>Activated Date</InputFieldName>
+              <Language>English</Language>
+              <Format>dd/MM/yyyy</Format>
+              <OutputFieldName>ACTIVATED DATE</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Activated Date To:
+dd/MM/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="474" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="True" />
+              <InputFieldName>Deactivated Date</InputFieldName>
+              <Language>English</Language>
+              <Format>dd/MM/yyyy</Format>
+              <OutputFieldName>DEACTIVATED DATE</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Deactivated Date To:
+dd/MM/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="582" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF ([Is Active] = 1 AND NOT ISNULL([Deactivated Date])) OR ([Deactivated Date] &lt; [Activated Date]) THEN&#xA;    &quot;Error&quot;&#xA;ELSE&#xA;    &quot;No Error&quot;&#xA;ENDIF&#xA;&#xA;" field="Validation_Error" size="2147483647" type="V_String" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Validation_Error = IF ([Is Active] = 1 AND NOT ISNULL([Deactivated Date])) OR ([...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="870" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Activated Date" selected="False" />
+                <SelectField field="Deactivated Date" selected="False" />
+                <SelectField field="Validation_Error" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="726" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression><![CDATA[[Validation_Error] = "No Error" AND [Is Active] ]]></Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[[Validation_Error] = "No Error" AND [Is Active] ]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="978" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File />
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Table>client_cleaned</Table>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <OutputOption>Overwrite</OutputOption>
+                <Connection DcmType="ConnectionId">5b5bd9ad-2c87-41fe-8a0f-58d83d916a61</Connection>
+                <Projection />
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:ROS
+Table=client_cleaned</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output26" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="True" />
+      <Destination ToolID="39" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output26" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output26" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="True" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ROS C,R,U (CLEANING &amp; VALIDATION)</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="79f26f94-b2d7-4296-b76e-8cde4927b19e" />
+      <Telemetry>
+        <PreviousWorkflowId value="6c054bc2-f31c-44d6-8e2f-b31877359fa9" />
+        <OriginWorkflowId value="6c054bc2-f31c-44d6-8e2f-b31877359fa9" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

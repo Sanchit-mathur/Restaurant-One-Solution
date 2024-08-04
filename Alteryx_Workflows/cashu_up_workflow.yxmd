@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ROS Data.xlsx
+Query=`Cash up$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="cashup_id" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`" type="V_String" />
+            <Field name="restaurant_id" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`" type="V_String" />
+            <Field name="bod_amount" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`" type="Double" />
+            <Field name="Total sales" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`" type="Double" />
+            <Field name="expenses" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`" type="Double" />
+            <Field name="tax" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`" type="Double" />
+            <Field name="Delivery" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`" type="Double" />
+            <Field name="eod_amount" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`" type="Double" />
+            <Field name="match" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`" type="V_String" />
+            <Field name="Banking ID" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`" type="V_String" />
+            <Field name="cash_up_date" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`" type="Date" />
+            <Field name="cashup_status" size="255" source="File: C:\Users\hp\OneDrive\Desktop\Kunjal\ROS\ROS Data.xlsx|||`Cash up$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="162" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"cashup_id","restaurant_id","bod_amount","Total sales","expenses","tax","Delivery","eod_amount","match","Banking ID","cash_up_date","cashup_status"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="234" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Total sales" selected="True" type="FixedDecimal" size="19.6" />
+            <SelectField field="expenses" selected="True" type="FixedDecimal" size="19.6" />
+            <SelectField field="tax" selected="True" type="FixedDecimal" size="19.6" />
+            <SelectField field="Delivery" selected="True" type="FixedDecimal" size="19.6" />
+            <SelectField field="eod_amount" selected="True" type="FixedDecimal" size="19.6" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="330" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[ROUND([eod_amount], 2) = ROUND([bod_amount] + [Total sales] + [tax] - [expenses] - [Delivery],2)
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ROUND([eod_amount], 2) = ROUND([bod_amount] + [Total sales] + [tax] - [expenses]...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="510" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File />
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TableStyle>Quoted</TableStyle>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Table>cashup_cleaned</Table>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <OutputOption>Overwrite</OutputOption>
+            <Connection DcmType="ConnectionId">5b5bd9ad-2c87-41fe-8a0f-58d83d916a61</Connection>
+            <Projection />
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:ROS
+Table=cashup_cleaned</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output26" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>cashu_up_workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="001036e1-0965-4e02-8c6b-46e6652fda01" />
+      <Telemetry>
+        <PreviousWorkflowId value="1146ec2d-d3a0-46fc-b4ad-65c5c48fa095" />
+        <OriginWorkflowId value="1146ec2d-d3a0-46fc-b4ad-65c5c48fa095" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
