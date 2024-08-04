@@ -1,0 +1,827 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <SingleRowFetch>False</SingleRowFetch>
+            <ReadCentroids>False</ReadCentroids>
+            <Query />
+            <TableStyle>Quoted</TableStyle>
+            <PostSQL />
+            <CacheData>False</CacheData>
+            <Table>"ROS"."dbo"."restaurant_cleaned"</Table>
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId">5b5bd9ad-2c87-41fe-8a0f-58d83d916a61</Connection>
+            <NoProgress>True</NoProgress>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:ROS
+Table="ROS"."dbo"."restaurant_clea...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Restaurant ID" size="255" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="V_String" />
+            <Field name="Client_id (FK)" size="255" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="V_String" />
+            <Field name="Currency_id (FK)" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="Double" />
+            <Field name="Country" size="255" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="V_String" />
+            <Field name="Name" size="255" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="V_String" />
+            <Field name="Location" size="255" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="V_WString" />
+            <Field name="Size" size="255" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="V_String" />
+            <Field name="Cusine" size="255" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="V_String" />
+            <Field name="Cost for 1" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="Double" />
+            <Field name="Timing" size="255" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="V_String" />
+            <Field name="Is_Franchise" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="Double" />
+            <Field name="is Active" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="Bool" />
+            <Field name="ACTIVATED DATE2" size="10" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="String" />
+            <Field name="INACTIVATED DATE" size="10" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;restaurant_cleaned&quot;" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <SingleRowFetch>False</SingleRowFetch>
+            <ReadCentroids>False</ReadCentroids>
+            <Query />
+            <TableStyle>Quoted</TableStyle>
+            <PostSQL />
+            <CacheData>False</CacheData>
+            <Table>"ROS"."dbo"."orders_cleaned"</Table>
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId">5b5bd9ad-2c87-41fe-8a0f-58d83d916a61</Connection>
+            <NoProgress>True</NoProgress>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:ROS
+Table="ROS"."dbo"."orders_cleaned"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="order_id" size="255" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="V_String" />
+            <Field name="Restaurant ID" size="255" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="V_String" />
+            <Field name="order_date" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="Date" />
+            <Field name="order_time" size="8" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="String" />
+            <Field name="order_type" size="255" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="V_String" />
+            <Field name="drinks_amount" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="Double" />
+            <Field name="food_amount" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="Double" />
+            <Field name="other_payment" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="Double" />
+            <Field name="service_charges" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="Double" />
+            <Field name="delivery_charges" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="Double" />
+            <Field name="order_amount" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="Double" />
+            <Field name="tax_amount" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="Double" />
+            <Field name="order_total" source="File: &quot;ROS&quot;.&quot;dbo&quot;.&quot;orders_cleaned&quot;" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="498" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Restaurant ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Restaurant ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Currency_id (FK)" selected="False" input="Left_" />
+                <SelectField field="Left_Timing" selected="False" input="Left_" />
+                <SelectField field="Left_Is_Franchise" selected="False" input="Left_" />
+                <SelectField field="Left_is Active" selected="False" input="Left_" />
+                <SelectField field="Left_INACTIVATED DATE" selected="False" input="Left_" />
+                <SelectField field="Left_activated" selected="False" input="Left_" />
+                <SelectField field="Right_Restaurant ID" selected="True" rename="Right_Restaurant ID" input="Right_" />
+                <SelectField field="Left_Validation_Error" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="582" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>order_type</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-07-29 06:27:50</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>delivery</Operand>
+              <StartDate>2024-07-29 06:27:50</StartDate>
+              <EndDate>2024-07-29 06:27:50</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[order_type] = "delivery"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1050" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Sum_delivery_amount" action="Sum" rename="2023-Q3_2023-Q4" />
+            <SummarizeField field="Restaurant ID" action="GroupBy" rename="Restaurant ID" />
+            <SummarizeField field="Name" action="First" rename="Name" />
+            <SummarizeField field="Location" action="First" rename="Location" />
+            <SummarizeField field="Size" action="First" rename="Size" />
+            <SummarizeField field="Cusine" action="First" rename="Cusine" />
+            <SummarizeField field="Cost for 1" action="First" rename="Cost for 1" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="402" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeDiff(DateTimeNow(), [activated], 'days')&#xA;" field="days" size="8" type="Double" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[days = DateTimeDiff(DateTimeNow(), [activated], 'days')
+
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="210" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>ACTIVATED DATE2</InputFieldName>
+          <Language>English</Language>
+          <Format>dd/MM/yy</Format>
+          <OutputFieldName>activated</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert ACTIVATED DATE2 From:
+dd/MM/yy</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="306" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[activated] &lt; DateTimeNow()</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[activated] &lt; DateTimeNow()</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="690" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeYear([order_date])" field="Year" size="1073741823" type="V_WString" enabled="true" />
+            <FormulaField expression="DateTimeQuarter([order_date])" field="quarter" size="1073741823" type="V_WString" enabled="true" />
+            <FormulaField expression="[Year] + '-Q' + [quarter]&#xA;" field="quarter_year" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Year = DateTimeYear([order_date])
+quarter = DateTimeQuarter([order_date])
+quarte...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="762" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Restaurant ID" action="GroupBy" rename="Restaurant ID" />
+            <SummarizeField field="quarter_year" action="GroupBy" rename="quarter_year" />
+            <SummarizeField field="order_amount" action="Sum" rename="Sum_delivery_amount" />
+            <SummarizeField field="Name" action="First" rename="Name" />
+            <SummarizeField field="Location" action="First" rename="Location" />
+            <SummarizeField field="Size" action="First" rename="Size" />
+            <SummarizeField field="Cusine" action="First" rename="Cusine" />
+            <SummarizeField field="Cost for 1" action="First" rename="Cost for 1" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="846" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[quarter_year] = "2023-Q3" or [quarter_year] = "2023-Q4" or [quarter_year] = "2024-Q1" or [quarter_year] = "2024-Q2"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[quarter_year] = "2023-Q3" or [quarter_year] = "2023-Q4" or [quarter_year] = "20...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="954" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[[quarter_year] = "2023-Q3" or [quarter_year] = "2023-Q4" ]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[[quarter_year] = "2023-Q3" or [quarter_year] = "2023-Q4" ]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1050" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Sum_delivery_amount" action="Sum" rename="2024-Q1_2024-Q2" />
+            <SummarizeField field="Restaurant ID" action="GroupBy" rename="Restaurant ID" />
+            <SummarizeField field="Name" action="First" rename="Name" />
+            <SummarizeField field="Location" action="First" rename="Location" />
+            <SummarizeField field="Size" action="First" rename="Size" />
+            <SummarizeField field="Cusine" action="First" rename="Cusine" />
+            <SummarizeField field="Cost for 1" action="First" rename="Cost for 1" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1146" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Restaurant ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Restaurant ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Restaurant ID" selected="True" input="Left_" />
+                <SelectField field="Right_Restaurant ID" selected="False" rename="Right_Restaurant ID" input="Right_" />
+                <SelectField field="Left_2023-Q3_2023-Q4" selected="True" input="Left_" />
+                <SelectField field="Right_2024-Q1_2024-Q2" selected="True" input="Right_" />
+                <SelectField field="Left_Name" selected="True" input="Left_" />
+                <SelectField field="Left_Location" selected="True" input="Left_" />
+                <SelectField field="Left_Size" selected="True" input="Left_" />
+                <SelectField field="Left_Cusine" selected="True" input="Left_" />
+                <SelectField field="Left_Cost for 1" selected="True" input="Left_" />
+                <SelectField field="Right_Name" selected="False" rename="Right_Name" input="Right_" />
+                <SelectField field="Right_Location" selected="False" rename="Right_Location" input="Right_" />
+                <SelectField field="Right_Size" selected="False" rename="Right_Size" input="Right_" />
+                <SelectField field="Right_Cusine" selected="False" rename="Right_Cusine" input="Right_" />
+                <SelectField field="Right_Cost for 1" selected="False" rename="Right_Cost for 1" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1230" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[2023-Q3_2023-Q4]-([2023-Q3_2023-Q4]*0.06)" field="2023-Q3_2023-Q4" size="8" type="Double" enabled="true" />
+            <FormulaField expression="[2024-Q1_2024-Q2]-([2024-Q1_2024-Q2]*0.06)" field="2024-Q1_2024-Q2" size="8" type="Double" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2023-Q3_2023-Q4 = [2023-Q3_2023-Q4]-([2023-Q3_2023-Q4]*0.06)
+2024-Q1_2024-Q2 = [...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1326" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="(([2024-Q1_2024-Q2]-[2023-Q3_2023-Q4])/[2023-Q3_2023-Q4])*100" field="Profit % increase" size="8" type="Double" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Profit % increase = (([2024-Q1_2024-Q2]-[2023-Q3_2023-Q4])/[2023-Q3_2023-Q4])*10...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1434" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Profit % increase] &gt;= 0 THEN &#xA;    [Profit % increase] + ([Profit % increase] * 0.1)&#xA;ELSE &#xA;    [Profit % increase] + (ABS([Profit % increase]) * 0.1)&#xA;ENDIF&#xA;" field="Target % Profit" size="8" type="Double" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Target % Profit = IF [Profit % increase] &gt;= 0 THEN 
+    [Profit % increase] + ([...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="1626" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False">
+            <Field name="Restaurant ID" />
+          </GroupingFields>
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Restaurant ID" selected="True" Alignment="Left" Width="" />
+            <Field name="2023-Q3_2023-Q4" selected="True" Alignment="Right" />
+            <Field name="2024-Q1_2024-Q2" selected="True" Alignment="Right" />
+            <Field name="Profit % increase" selected="True" Alignment="Right" />
+            <Field name="Target % Profit" selected="True" Alignment="Left" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1722" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\hp\AppData\Local\Temp\Alteryx\Engine_4960_b91c882315934cd5bc5d3719ecbbf973_\Engine_4960_3773849429987c4e858a16ade6c3a6ca~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="1650" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces>
+              <type>bar</type>
+              <mode>lines+markers</mode>
+              <xsrc>Restaurant ID</xsrc>
+              <ysrc>Profit % increase</ysrc>
+              <line>
+                <width>2</width>
+              </line>
+              <marker>
+                <size>6</size>
+                <line>
+                  <width>0</width>
+                </line>
+              </marker>
+              <showlegend>true</showlegend>
+              <orientation>v</orientation>
+            </Traces>
+            <Traces>
+              <type>bar</type>
+              <mode>lines+markers</mode>
+              <xsrc>Restaurant ID</xsrc>
+              <ysrc>Target % Profit</ysrc>
+              <line>
+                <width>2</width>
+              </line>
+              <marker>
+                <size>6</size>
+                <line>
+                  <width>0</width>
+                </line>
+              </marker>
+              <orientation>v</orientation>
+            </Traces>
+            <Layout>
+              <title>
+                <text>
+                </text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+              </font>
+              <autosize>false</autosize>
+              <width>2000</width>
+              <height>849</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>0.43145597203453079</range>
+                <range>39.993365691051991</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>Restaurant ID</text>
+                </title>
+                <type>category</type>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <nticks>0</nticks>
+                <showgrid>false</showgrid>
+                <showline>true</showline>
+                <tickmode>auto</tickmode>
+                <tick0>-1</tick0>
+                <dtick>0</dtick>
+              </xaxis>
+              <yaxis>
+                <range>-13.279455129282615</range>
+                <range>4.7534022064349539</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>Profit % increase</text>
+                </title>
+                <type>linear</type>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+              </legend>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1746" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\hp\AppData\Local\Temp\Alteryx\Engine_4960_b91c882315934cd5bc5d3719ecbbf973_\Engine_4960_eb89e7bae13b6547b6dc89c10dc8e3dd~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1662" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\hp\OneDrive\Desktop\Kunjal\KPI\Transformed\kpi3.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>kpi3.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="22" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="False" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Join" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>kpi_3</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="8265eddc-b428-408b-85d8-f9b4fa46bfb5" />
+      <Telemetry>
+        <PreviousWorkflowId value="eba29bf4-f586-46d9-8b5e-7789c0d98180" />
+        <OriginWorkflowId value="eba29bf4-f586-46d9-8b5e-7789c0d98180" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
