@@ -138,7 +138,6 @@ Future enhancements could include:
 
 - **Additional KPIs**: Expanding the set of KPIs to cover more aspects of restaurant operations.
 - **Integration with New Systems**: Incorporating data from new systems and expanding the scope of analysis.
-  
 
 By integrating Excel and Alteryx, this project enhances data analysis and reporting capabilities, resulting in improved decision-making and operational efficiency for restaurant management. The combination of foundational data management in Excel and advanced analytics in Alteryx provides a comprehensive solution for optimizing restaurant performance and achieving business goals.
 
